@@ -1,2 +1,22 @@
 // Import page-specific CSS files here.
 @import "home";
+
+body {
+  text-align : center;
+}
+
+.card {
+  border: 1px solid lightgrey;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333333
+}
+
+.card a:hover {
+  color: darkgrey;
+}
+

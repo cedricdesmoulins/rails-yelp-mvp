@@ -1,0 +1,21 @@
+<div class="container">
+
+  <h2>Restaurant details</h2>
+
+
+  <h3> <%= @restaurant.name %> (<%= @restaurant.category %>) </h3>
+  <img src="https://picsum.photos/500/300/?random " alt="">
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone_number %></p>
+
+  <%= link_to "add a review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+</div>
+
+<div class="container">
+  <h3>Discover the last reviews about this restaurant</h3>
+
+<% @reviews.each do |review| %>
+<p> "<%= review.content %>"
+<p> (<%= review.rating %>/5)</p>
+<% end %>
+</div>
